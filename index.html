@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration form validation</title>
-    <!-- <link rel="stylesheet" href="reset.css" /> -->
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="./style.css" />
     <script defer src="./index.js"></script>
   </head>
@@ -21,6 +21,7 @@
             pattern="[A-Z][a-z]{2,19}(-[A-Z][a-z]{2,19})?"
             autofocus
             required
+            tabindex="1"
           />
         </label>
 
@@ -32,12 +33,13 @@
             placeholder="Your last name"
             pattern="[A-Z][a-z]{2,19}(-[A-Z][a-z]{2,19})?" 
             required
+            tabindex="6"
           />
         </label>
 
         <label>
           <span>Email</span>
-          <input type="email" name="email" placeholder="Your @email" required />
+          <input type="email" name="email" placeholder="Your @email" required tabindex="3"/>
         </label>
 
         <label>
@@ -59,6 +61,7 @@
             type="password"
             name="password"
             pattern="(?=.*[A-Z].*)(?=.*[a-z].*)(?=.*\d.*)(?=.*[!@#$%^&*_].*).{8,32}"
+            required
           />
         </label>
 
