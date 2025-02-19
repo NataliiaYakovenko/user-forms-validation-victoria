@@ -1,11 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>user-form-validation</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form validation</title>
+    <!-- <link rel="stylesheet" href="reset.css" /> -->
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <main>
+      <h2>Registration form</h2>
+      <form action="">
+        <label>
+          <span>First name</span>
+          <input
+            type="text"
+            name="first-name"
+            placeholder="Your name"
+            pattern="[A-Z][a-z]{2,19}(-[A-Z][a-z]{2,19})?"
+            autofocus
+            required
+          />
+        </label>
+
+        <label>
+          <span>Last name</span>
+          <input
+            type="text"
+            name="last-name"
+            placeholder="Your last name"
+            pattern="[A-Z][a-z]{2,19}(-[A-Z][a-z]{2,19})?" 
+            required
+          />
+        </label>
+
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" placeholder="Your @email" required />
+        </label>
+
+        <label>
+          <span>Phone</span>
+          <input
+            type="tel"
+            name="phone"
+            autocomplete
+            placeholder="+380112223344"
+            pattern="\+380\d{9}"
+            required
+          />
+        </label>
+
+        <label
+          >Passvord
+          <span>Passvord</span>
+          <input
+            type="password"
+            name="password"
+            pattern="(?=.*[A-Z].*)(?=.*[a-z].*)(?=.*\d.*)(?=.*[!@#$%^&*_].*).{8,32}"
+          />
+        </label>
+
+        <label
+          >Passvord confirmation
+          <span>Passvord</span>
+          <input
+            type="password"
+            name="password-confirmation"
+            pattern="(?=.*[A-Z].*)(?=.*[a-z].*)(?=.*\d.*)(?=.*[!@#$%^&*_].*).{8,32}"
+            required
+          />
+        </label>
+
+        <button type="submit">Register</button>
+      </form>
+    </main>
+  </body>
 </html>
