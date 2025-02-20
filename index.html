@@ -18,20 +18,18 @@
             type="text"
             name="first-name"
             placeholder="Your name"
-            pattern="[A-Z][a-z]{2,19}(-[A-Z][a-z]{2,19})?"
             autofocus
             required
             tabindex="1"
-          />
-        </label>
-
+            />
+          </label>
+        
         <label>
           <span>Last name</span>
           <input
             type="text"
             name="last-name"
             placeholder="Your last name"
-            pattern="[A-Z][a-z]{2,19}(-[A-Z][a-z]{2,19})?" 
             required
             tabindex="6"
           />
@@ -49,29 +47,24 @@
             name="phone"
             autocomplete
             placeholder="+380112223344"
-            pattern="\+380\d{9}"
             required
           />
         </label>
 
-        <label
-          >Passvord
+        <label>
           <span>Passvord</span>
           <input
             type="password"
             name="password"
-            pattern="(?=.*[A-Z].*)(?=.*[a-z].*)(?=.*\d.*)(?=.*[!@#$%^&*_].*).{8,32}"
             required
           />
         </label>
 
-        <label
-          >Passvord confirmation
-          <span>Passvord</span>
+        <label>
+          <span>Passvord confirmation</span>
           <input
             type="password"
             name="password-confirmation"
-            pattern="(?=.*[A-Z].*)(?=.*[a-z].*)(?=.*\d.*)(?=.*[!@#$%^&*_].*).{8,32}"
             required
           />
         </label>

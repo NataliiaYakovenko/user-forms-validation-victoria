@@ -36,9 +36,16 @@ input{
     outline: none;
 }
 
-input:valid{
+/* input:valid{
     border: 2px solid green;
 }
 input:invalid{
+    border: 2px solid red;
+} */
+
+.valid{
+    border: 2px solid green;
+}
+.invalid{
     border: 2px solid red;
 }
