@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+.valid{
+background-color: aquamarine;
+}
+
+.invalid{
+background-color: rgb(246, 157, 124);
+
+}
+
+input{
+    outline: none;
+}
+
+.doneTask{
+    text-decoration: 1px line-through lightgrey ;
+    color: grey;
+}
